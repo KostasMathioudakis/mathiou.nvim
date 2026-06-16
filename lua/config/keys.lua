@@ -18,6 +18,11 @@ M.format = {
     format = "<M-f>",
 }
 
+M.comment = {
+    line = "<C-/>",
+    line_terminal = "<C-_>",
+}
+
 M.harpoon = {
     add = "<M-a>",
     menu = "<M-e>",

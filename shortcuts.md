@@ -74,6 +74,15 @@
 
 On macOS, the terminal may need Option configured as Esc/Meta for `<M-f>` mappings to reach Neovim.
 
+## Commenting
+
+| Shortcut | Actual keys | Mode | Action |
+|---|---|---|---|
+| `<C-/>` | `Control + /` | Normal | Toggle a filetype-aware line comment on the current line |
+| `<C-/>` | `Control + /` | Visual | Toggle filetype-aware line comments on the selected lines |
+
+Some terminals send `Control + /` to Neovim as `<C-_>`; this config supports both forms.
+
 ## Harpoon
 
 | Shortcut | Actual keys | Mode | Action |
