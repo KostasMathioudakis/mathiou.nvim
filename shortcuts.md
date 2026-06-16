@@ -78,16 +78,18 @@ On macOS, the terminal may need Option configured as Esc/Meta for `<M-f>` mappin
 
 | Shortcut | Actual keys | Mode | Action |
 |---|---|---|---|
-| `<M-a>` | `Command a` on macOS / `Alt a` on Linux or Windows | Normal | Add the current file to Harpoon |
-| `<M-e>` | `Command e` on macOS / `Alt e` on Linux or Windows | Normal | Open the Harpoon quick menu |
-| `<M-1>` | `Command 1` on macOS / `Alt 1` on Linux or Windows | Normal | Jump to Harpoon file 1 |
-| `<M-2>` | `Command 2` on macOS / `Alt 2` on Linux or Windows | Normal | Jump to Harpoon file 2 |
-| `<M-3>` | `Command 3` on macOS / `Alt 3` on Linux or Windows | Normal | Jump to Harpoon file 3 |
-| `<M-4>` | `Command 4` on macOS / `Alt 4` on Linux or Windows | Normal | Jump to Harpoon file 4 |
-| `<M-d>` | `Command d` on macOS / `Alt d` on Linux or Windows | Normal | Remove the current file from Harpoon |
+| `<M-a>` | `Option a` on macOS / `Alt a` on Linux or Windows | Normal | Add the current file to Harpoon |
+| `<M-e>` | `Option e` on macOS / `Alt e` on Linux or Windows | Normal | Open the Harpoon quick menu |
+| `<M-1>` | `Option 1` on macOS / `Alt 1` on Linux or Windows | Normal | Jump to Harpoon file 1 |
+| `<M-2>` | `Option 2` on macOS / `Alt 2` on Linux or Windows | Normal | Jump to Harpoon file 2 |
+| `<M-3>` | `Option 3` on macOS / `Alt 3` on Linux or Windows | Normal | Jump to Harpoon file 3 |
+| `<M-4>` | `Option 4` on macOS / `Alt 4` on Linux or Windows | Normal | Jump to Harpoon file 4 |
+| `<M-d>` | `Option d` on macOS / `Alt d` on Linux or Windows | Normal | Remove the current file from Harpoon |
 | `j` / `k` | `j` / `k` | Harpoon menu | Move down or up through the Harpoon list |
 | `dd` | `d d` | Harpoon menu | Remove the entry under the cursor |
 | `q` / `Esc` | `q` / `Esc` | Harpoon menu | Close the Harpoon menu |
+
+On macOS, the terminal may need Option configured as Esc/Meta for `<M-...>` mappings to reach Neovim.
 
 ## Rust Tasks
 
