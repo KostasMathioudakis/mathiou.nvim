@@ -8,6 +8,7 @@ require("config.remap")
 require("config.lazy")
 require("config.lsp")
 require("config.set")
-require("config.colors")
+-- Toggle for transparent background
+--require("config.colors")
 
 vim.cmd.colorscheme("carbonfox")
