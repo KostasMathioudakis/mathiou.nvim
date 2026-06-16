@@ -1,0 +1,24 @@
+local M = {}
+
+function M.transparent_background()
+    local groups = {
+        "Normal",
+        "NormalFloat",
+        "NormalNC",
+        "SignColumn",
+        "EndOfBuffer",
+        "FloatBorder",
+    }
+
+    for _, group in ipairs(groups) do
+        vim.api.nvim_set_hl(0, group, { bg = "none" })
+    end
+end
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+    callback = M.transparent_background,
+})
+
+M.transparent_background()
+
+return M
