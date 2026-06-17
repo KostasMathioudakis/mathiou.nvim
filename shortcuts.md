@@ -40,6 +40,14 @@
 | `g;` | `g ;` | Normal | Jump to the previous change position |
 | `g,` | `g ,` | Normal | Jump to the next change position |
 
+## LSP
+
+| Shortcut | Actual keys | Mode | Action |
+|---|---|---|---|
+| `<M-x>` | `Option x` on macOS / `Alt x` on Linux or Windows | Normal | Toggle LSP inlay hints for the current buffer |
+
+On macOS, the terminal may need Option configured as Esc/Meta for `<M-x>` mappings to reach Neovim.
+
 ## Oil
 
 | Shortcut | Actual keys | Mode | Action |

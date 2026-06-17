@@ -41,6 +41,74 @@ return {
                         check = {
                             command = "clippy",
                         },
+                        inlayHints = {
+                            bindingModeHints = {
+                                enable = true,
+                            },
+                            chainingHints = {
+                                enable = true,
+                            },
+                            closingBraceHints = {
+                                enable = true,
+                                minLines = 1,
+                            },
+                            closureCaptureHints = {
+                                enable = true,
+                            },
+                            closureReturnTypeHints = {
+                                enable = "always",
+                            },
+                            discriminantHints = {
+                                enable = "always",
+                            },
+                            expressionAdjustmentHints = {
+                                enable = "always",
+                                hideOutsideUnsafe = false,
+                                mode = "prefix",
+                            },
+                            genericParameterHints = {
+                                const = {
+                                    enable = true,
+                                },
+                                lifetime = {
+                                    enable = true,
+                                },
+                                type = {
+                                    enable = true,
+                                },
+                            },
+                            implicitDrops = {
+                                enable = true,
+                            },
+                            implicitSizedBoundHints = {
+                                enable = true,
+                            },
+                            lifetimeElisionHints = {
+                                enable = "always",
+                                useParameterNames = true,
+                            },
+                            maxLength = nil,
+                            parameterHints = {
+                                enable = true,
+                                missingArguments = {
+                                    enable = true,
+                                },
+                            },
+                            rangeExclusiveHints = {
+                                enable = true,
+                            },
+                            reborrowHints = {
+                                enable = "always",
+                            },
+                            renderColons = true,
+                            typeHints = {
+                                enable = true,
+                                hideClosureInitialization = false,
+                                hideClosureParameter = false,
+                                hideInferredTypes = false,
+                                hideNamedConstructor = false,
+                            },
+                        },
                     },
                 },
             })

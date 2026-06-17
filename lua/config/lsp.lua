@@ -46,5 +46,20 @@ vim.api.nvim_create_autocmd("LspAttach", {
             buffer = event.buf,
             desc = "Show diagnostics",
         })
+
+        if vim.lsp.inlay_hint then
+            vim.keymap.set("n", keys.lsp.inlay_hints, function()
+                local enabled = vim.lsp.inlay_hint.is_enabled({
+                    bufnr = event.buf,
+                })
+
+                vim.lsp.inlay_hint.enable(not enabled, {
+                    bufnr = event.buf,
+                })
+            end, {
+                buffer = event.buf,
+                desc = "Toggle inlay hints",
+            })
+        end
     end,
 })

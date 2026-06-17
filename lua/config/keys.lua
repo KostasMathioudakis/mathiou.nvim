@@ -69,6 +69,7 @@ M.lsp = {
     rename = "<leader>lr",
     code_action = "<leader>la",
     diagnostics = "<leader>ld",
+    inlay_hints = "<M-x>",
 }
 
 M.blink = {
