@@ -139,13 +139,14 @@ On macOS, the terminal may need Option configured as Esc/Meta for `<M-...>` mapp
 
 | Shortcut | Actual keys | Mode | Action |
 |---|---|---|---|
-| `<M-c>r` | `Option c` then `r` on macOS / `Alt c` then `r` on Linux or Windows | Normal | Start `cargo run` in Overseer |
-| `<M-c>c` | `Option c` then `c` on macOS / `Alt c` then `c` on Linux or Windows | Normal | Start `cargo check` in Overseer |
-| `<M-c>w` | `Option c` then `w` on macOS / `Alt c` then `w` on Linux or Windows | Normal | Start `cargo watch` in Overseer |
-| `<M-c>t` | `Option c` then `t` on macOS / `Alt c` then `t` on Linux or Windows | Normal | Start `cargo test` in Overseer |
-| `<M-q>` | `Option q` on macOS / `Alt q` on Linux or Windows | Overseer task output / task list | Close the task output or task list window |
+| `<leader>cr` | `Space c r` | Normal | Start `cargo run` in Overseer |
+| `<leader>cc` | `Space c c` | Normal | Start `cargo check` in Overseer |
+| `<leader>cb` | `Space c b` | Normal | Start `cargo build` in Overseer |
+| `<leader>cw` | `Space c w` | Normal | Start `cargo watch -x run` in Overseer |
+| `<leader>ct` | `Space c t` | Normal | Start `cargo test` in Overseer |
+| `<M-q>` | `Option q` on macOS / `Alt q` on Linux or Windows | Overseer task output / task list | Stop the task and close the task output, or close the task list |
 
-On macOS, the terminal may need Option configured as Esc/Meta for `<M-c>` mappings to reach Neovim.
+On macOS, the terminal may need Option configured as Esc/Meta for `<M-q>` mappings to reach Neovim.
 
 ## Lazy
 

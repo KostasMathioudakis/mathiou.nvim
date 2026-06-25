@@ -12,3 +12,5 @@ require("config.set")
 --require("config.colors")
 
 vim.cmd.colorscheme("catppuccin-mocha")
+--vim.cmd.colorscheme("jb")
+--vim.cmd.colorscheme("rose-pine")

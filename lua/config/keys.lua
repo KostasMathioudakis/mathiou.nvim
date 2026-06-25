@@ -34,10 +34,11 @@ M.harpoon = {
 }
 
 M.rust = {
-    run = "<M-c>r",
-    check = "<M-c>c",
-    watch = "<M-c>w",
-    test = "<M-c>t",
+    run = "<leader>cr",
+    check = "<leader>cc",
+    build = "<leader>cb",
+    watch = "<leader>cw",
+    test = "<leader>ct",
     close_task = "<M-q>",
 }
 

@@ -52,13 +52,16 @@ local function run_cargo_task(name, args)
 
     local bufnr = task:get_bufnr()
     if bufnr then
-        vim.keymap.set("n", keys.rust.close_task, "<cmd>close<cr>", {
+        local stop_and_close = function()
+            task:stop()
+            vim.cmd.close()
+        end
+
+        vim.keymap.set({ "n", "t" }, keys.rust.close_task, function()
+            stop_and_close()
+        end, {
             buffer = bufnr,
-            desc = "Close task output",
-        })
-        vim.keymap.set("t", keys.rust.close_task, "<C-\\><C-n><cmd>close<cr>", {
-            buffer = bufnr,
-            desc = "Close task output",
+            desc = "Stop task and close output",
         })
     end
 end
@@ -93,9 +96,17 @@ return {
             desc = "Cargo check",
         },
         {
+            keys.rust.build,
+            function()
+                run_cargo_task("cargo build", { "build" })
+            end,
+            mode = "n",
+            desc = "Cargo build",
+        },
+        {
             keys.rust.watch,
             function()
-                run_cargo_task("cargo watch", { "watch" })
+                run_cargo_task("cargo watch -x run", { "watch", "-x", "run" })
             end,
             mode = "n",
             desc = "Cargo watch",
